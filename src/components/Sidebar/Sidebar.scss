@@ -1,0 +1,101 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(228, 228, 228);
+    min-height: 100vh;
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid rgb(228, 228, 228);
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: #6439ff;
+        }
+    }
+
+        .center {
+            padding-left: 10px;
+
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                .title{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #999;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                }
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    padding-left: 10px;
+                    &:hover{
+                        background-color: #ece8ff;
+                        transition: 0.2s ease-in;
+                    }
+                    .icon{
+                        font-size: 20px;
+                        color: #7451f8;
+                    }
+
+                    span{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: rgb(85, 85, 85);
+                        margin: 10px;
+                    }
+                }
+            }
+    
+        }
+        .bottom{
+            margin: 10px;
+            margin-top: 25px;
+
+            .title{
+                font-size: 16px;
+                font-weight: 600;
+                color: #999;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            .options{
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                .colorOption {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 5px;
+                        border: 1px solid #999;
+                        cursor: pointer;
+                        margin: 5px;
+                
+                        &:nth-child(1) {
+                            background-color: white;
+                        }
+                
+                        &:nth-child(2) {
+                            background-color: black;
+                        }
+                        &:hover{
+                            border: 1px solid #7451f8;
+                            transform: scale(1.2);
+                            transition: 0.2s ease;
+                        }
+                    }
+            }
+
+            
+            
+        }
+}
